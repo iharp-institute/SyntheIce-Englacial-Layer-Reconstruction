@@ -174,7 +174,8 @@ pip install -r requirements.txt
 1. Download the dataset from [SyntheIce-Dataset](https://github.com/USER/SyntheIce-Dataset).
 2. Run the experiments in order: `xcheck_synthetic/`, `exp_synthetic/`, `exp_real/`.
 
-**Real data:** The Raw radargrams come from publicly available archive [CReSIS](https://data.cresis.ku.edu/). 
+Real Data: The Raw radargrams come ferom the publicly available archive: **[CReSIS](https://data.cresis.ku.edu/)**.
+
 ---
 
 ## Citation
