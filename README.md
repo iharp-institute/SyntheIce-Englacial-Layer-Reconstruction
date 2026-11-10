@@ -1,5 +1,11 @@
 # SyntheIce: A Synthetic Radargram Annotation Benchmark for Englacial Layer Reconstruction [Paper]
 
+## Abstract
+
+Englacial layers in radio-echo-sounding radargrams (subsurface ice images) encode the past climate and flow history of ice sheets and glaciers, but extracting them at scale is bottlenecked by time-consuming manual annotation and by semi-automated detectors that return broken, disconnected fragments rather than continuous horizons. We address two coupled problems in layer annotation products: repairing partial
+annotations by connecting their fragments into coherent full-layer reconstructions across an entire profile, and validating layer continuity across the boundaries of adjacent tiles. We introduce a slope-aware greedy fragment-linking algorithm that reconstructs full-width layers from partial detections, assigning each fragment to its parent layer through row-similarity gating and an exponentially weighted slope predictor (EWMA), and attaching a content-based hash ID to each reconstruction for stable cross-radargram identification. For development and rigorous quantitative evaluation, we generate a synthetic dataset of 600 radargrams spanning multiple complexity levels, including noise close to realistic conditions, 150 are wide radargrams cropped into four adjacent tiles. All come with exact ground-truth annotations, giving full control for validation. We test this dataset with XCheck, a consistency-based validation framework: whereas XCheck previously operated on only two consecutive images, we apply it across four consecutive tiles, enforcing continuity at every boundary, which also indicates that the
+synthetic data is realistic enough to drive real-world algorithms. Our major finding generalizes beyond ice: when linear features in spatial data are broken into fragments but keep a consistent local geometry, linking them by predicted trajectory is more reliable than by appearance. Evaluated against expert-labeled real radargrams, the method achieves high precision, recall, F1, and mean IoU, establishing transfer of our findings to a real-world dataset.
+
 ## SyntheIce Experiments: XCheck, TraceLink, and Evaluation
 
 Code for the experiments in the paper *SyntheIce: A Synthetic Radargram Annotation Benchmark for Englacial Layer Reconstruction*
@@ -174,11 +180,11 @@ pip install -r requirements.txt
 1. Download the dataset from [SyntheIce-Dataset](https://github.com/USER/SyntheIce-Dataset).
 2. Run the experiments in order: `xcheck_synthetic/`, `exp_synthetic/`, `exp_real/`.
 
-Real Data: The Raw radargrams come ferom the publicly available archive: **[CReSIS](https://data.cresis.ku.edu/)**.
+Real Data: The Raw radargrams come ferom the publicly available archive: [CReSIS](https://data.cresis.ku.edu/).
 
 ---
 
-## Citation
+## Citation 
 
 M. B. Hassan, B. A. Tama, S. Purushotham, and V. P. Janeja, "SyntheIce: A Synthetic Radargram Annotation Benchmark for Englacial Layer Reconstruction," in Proc. 2026 IEEE International Conference on Big Data (BigData), Phoenix, AZ, USA, Dec. 2026, to appear
 
