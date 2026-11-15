@@ -12,7 +12,7 @@ Code for the experiments in the paper *SyntheIce: A Synthetic Radargram Annotati
 
 The paper has been accepted in the proceedings of the 2026 IEEE International Conference on Big Data (BigData), Phoenix, AZ, USA, Dec. 2026.
 
-> The synthetic dataset and its generator are in the companion repository: **[SyntheIce-Dataset](https://github.com/USER/SyntheIce-Dataset)**.
+> The synthetic dataset and its generator are in the companion repository: **[SyntheIce-Dataset](https://github.com/iharp-institute/SyntheIce-Dataset)**.
 
 ---
 
