@@ -1,4 +1,4 @@
-# SyntheIce: A Synthetic Radargram Annotation Benchmark for Englacial Layer Reconstruction [Paper]
+# SyntheIce: A Synthetic Radargram Annotation Benchmark for Englacial Layer Reconstruction [Paper](https://arxiv.org/pdf/2611.14728)
 
 ## Abstract
 
